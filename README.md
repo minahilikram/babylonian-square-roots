@@ -1,4 +1,4 @@
-# babylonian-square-roots
+# square-roots
 
 [Square Root](https://en.wikipedia.org/wiki/Square_root) calculation using COBOL Algorithms
 
@@ -7,13 +7,13 @@
 ## Install
 
 ```sh
-$ git clone https://github.com/minahilikram/babylonian-square-roots
+$ git clone https://github.com/minahilikram/square-roots
 ```
 
 ## Usage
 
 ```sh
-$ cd babylonian-square-roots/
+$ cd square-roots/
 $ make
 $ make run
 ```
