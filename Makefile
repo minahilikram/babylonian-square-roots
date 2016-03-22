@@ -9,16 +9,16 @@ BINDIR = bin/
 SRCDIR = src/
 
 #names of source code file in the lines below.  
-SOURCE = $(SRCDIR)sqrt.cob
+SOURCE = $(SRCDIR)hello.cob
 
 #names of the executable file in the lines below.  
-EXE = $(BINDIR)sqrt
+EXE = $(BINDIR)hello
 
 all:
-	$(CC) $(FCFLAGS) $(SOURCE) -o $(EXE)
+	$(CC) $(FCFLAGS) $(SOURCE) $(SRCDIR)sqroot.cob -o $(EXE)
 
 clean:
 	@ rm bin/*
 
 run:
-	cd bin; ./sqrt
+	cd bin; ./hello
