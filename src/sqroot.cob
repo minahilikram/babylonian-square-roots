@@ -5,12 +5,12 @@ data division.
 
 working-storage section.
 
-01 standard-input picture x(80).
+linkage section.
+01 number-input picture 9(11)v9(6).
+77 approx picture 9(11)v9(6).
 
-procedure division.
-	display "Hello World! ".
-	
-	accept standard-input from console.
-	display standard-input.
-exit program.
+procedure division using number-input, approx.
+	perform calculation 1000 times.
 
+calculation.
+	compute approx = ((approx) + (number-input / approx)) / 2.
